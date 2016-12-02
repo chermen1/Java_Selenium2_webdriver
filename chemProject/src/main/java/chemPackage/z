@@ -1,0 +1,69 @@
+{
+  "alertsSettings",{
+  pageSize: 15,
+  paramKeys: ",fromAccountDisplayName,toAccountNickname,transferAmount,condition,transactionAmount,merchantName,merchantCity,amount,biller,dueDate,transactionFee,billerName,",
+  alertsEnabled:
+  !
+  0,
+  actionableAlertsEnabled:
+  !
+  1,
+  alertHistoryEnabled:
+  !
+  0,
+  generalAlertsEnabled:
+  !
+  1,
+  accountAlertsEnabled:
+  !
+  0,
+  alertPrefsEnabled:
+  !
+  0
+},
+"mvpAuthSettings", {authServiceName: "basic", passcodeEnabled: !0, escalatedAuthentication: {escalatedAuthenticationEnabled: !1,escalatedAuthenticationList:["transfer"], otpSigningOperationList:["transfer"]}
+},
+"beneficiarySettings", {
+beneficiaryEnabled: !1},
+"billPaySettings", {
+paymentReview: !0,paymentsEnabled: !0, paymentsRecentEnabled: !0,paymentsScheduledEnabled: !0, minDays: 0, maxDays: 30, blackOutDays:[0, 6], blackOutDates:["1/1/2016", "1/18/2016", "2/15/2016", "5/30/2016", "7/4/2016","9/5/2016", "10/10/2016", "11/11/2016", "11/24/2016", "12/26/2016","1/2/2017", "1/16/2017", "2/20/2017", "5/29/2017", "4/4/2017","9/4/2017", "10/9/2017", "11/11/2017", "11/23/2017", "12/25/2017","1/1/2018", "1/15/2018", "2/19/2018", "5/28/2018", "4/4/2018","9/3/2018", "10/8/2018", "11/12/2018", "11/22/2018", "12/25/2018","1/1/2019", "1/21/2019", "2/18/2019", "5/27/2019", "4/4/2019","9/2/2019", "10/14/2019", "11/11/2019", "11/28/2019", "12/25/2019"]},
+"payeesSettings", {
+defaultPageSize: 15
+},
+"cordovaPushNotificationSettings", {android: {senderID: "1047466433565"}},
+"mvpNgDdaSettings", {
+accountListBehavior: {
+accounts:"open", alerts: "first", default: "open",deposit: "DDA", payment: "first", transfer:"DDA"}, defaultPageSize: 15, accountsThreshold: 5, inSearch: !1, accountTypeNames: {CHK: "Checking", CRD: "Credit Account", SAV: "Savings", CARD: "Credit Cards", LAON: "Loans", MTG: "Loans", CD: "Certificates", IRA: "Retirement", LOC: "Line of Credit"}, searchSettings: {searchEnabled: !0, searchByAmountEnabled: !0, searchByCheckEnabled: !0, searchByDateEnabled: !0},datePicker: {maxSearchDays: 30, minDays: 0, maxDays: 30, blackOutDays:[], blackOutDates:[]}, animatedBanner: {bannerImageURL: "images/animated-banner@2x.png", bannerURL: "https://www.FIHostedSite.com/", bannerEnabled: !0, inAppBrowserHeaderBackgroundColor:"#000000", inAppBrowserBackButtonColor: "#FFFFFF"}, pendingTransactionsLink: !0, RIB: {ribEnabled: !1,eligibleAccountTypes:[]}, accountStatements: {accountStatementsEnabled: !1,eligibleAccountTypes:[]}
+},
+"httpSettings", {
+apiServer: {
+protocol: "https", host: "m-test5.secumd.org", port: 443}, clientVersion: "4.0.0", tenantId: "unknown-tenant-id",uriPrefix: "banking_rest_api53"
+},
+"httpAuthSignatureSettings", {
+authConsumerKey:"", authHeaderName: "Auth", authSignatureMethod: "HMAC-SHA256",authVersion: "1.0", consumerKey: "", consumerSecret:"", tokenSecret: "", urlPatterns:["rest_api", "mvp-csr"]},
+"httpLocaleSettings", {
+preferredLocale: "en_US", fallbackLocales:["en-US", "en"], fallbackLocaleQuality: .8
+},
+"i18nSettings", {i18nDebug: !1, i18nConfig: {path:"i18n", filePrefix: "language-", fileSuffix: ".json",supportedLanguages:["en-US", "es-US", "fr-US"]}, defaultLanguage: "en-US"
+},
+"locationsSettings", {locationListPageSize: 15, defaultMapLocations: 3, defaultLongitude:"", defaultLatitude: "", enableHighAccuracy: "",maximumAge: "", timeout: "", mapRefreshDistanceMiles:1, locationsEnabled: !0, mapClientId: 0, mapChannel: "", enableLocationSubtypes: !0},
+"mvpNgMessagesSettings", {
+emergencyMessageEnabled: !0
+},
+"preferencesSettings", {supportedTimezones:[{id: "1", key: "US/Hawaii", abbreviation: "HST"}, {id: "2", key: "US/Alaska", abbreviation: "AKST", dstAbbreviation: "AKDT"}, {id: "3", key: "US/Pacific", abbreviation: "PST"}, {id: "4", key: "US/Arizona", abbreviation: "MST"},{id: "5", key: "US/Mountain", abbreviation: "MST", dstAbbreviation: "MDT"}, {id: "6", key: "US/Central", abbreviation: "CST"}, {id: "7", key: "US/Eastern", abbreviation: "EST"}], payeesEnabled: !0, touchIdEnabled: !0, touchIdServiceName: "BankOfTrust", touchIdKey: "pin", passwordUpdateEnabled: !1, helpEnabled: !0, timezoneEnabled: !0, accountsEnabled: !0, textBankingEnabled: !0, securityImageAndPhraseEnabled: !1, securityQuestionsEnabled: !1, languageSelectionEnabled: !1},
+"productizationSettings", {marketingEnabled: !0, forceProductizationOnPinLogin:!1, products: {passthrough: "passthrough",basic: "basic", dda: "dda", transfer:"transfer", billpay: "billpay", fraud: "fraud",rdc: "rdc", p2p: "p2p"}},
+"transfersSettings", {transferReview: !0, transfersEnabled:!0, transfersRecentEnabled: !0, transfersScheduledEnabled:!0, transferMemoEnabled: !1, transferToBeneficiaryEnabled:!1, mortgageTransferAccountTypeList:[], minDays: 0, maxDays: 30, blackOutDays:[], blackOutDates:[]},
+"externalTransfersSettings", {
+externalTransferEnabled: !1,externalTransferRecentEnabled: !1, externalTransferScheduledEnabled: !1,accountGroupName: "MONEY MOVER", eligibleAccountMatrix: {MM:["CHK", "SAV", "LN"], CHK:["MM"], SAV:["MM"]}
+},
+"cashToATMSettings", {
+cashToATMEnabled: !1, amountPickerValues: {minValue: 20, maxValue:2e3, multipleOf:[20, 50], currencySymbol: "MAD"}, eligibleAccountTypes:[]},
+"utilitiesSettings", {
+clientSession: {
+timeoutEnabled:!0, timeoutInSeconds: 300, startEvent: "$authSessionStart", stopEvent: "$authSessionEnded", timeoutEvent: "$softSignOut", timeoutMessage: "session.timeout.msg", keepAliveEnabled: !0, keepAliveInSeconds:60, idleWarnInSeconds: 15, idleWarnEvent: "mvpNgSessionIdleWarning",appBackgroundDuration: 30}, defaultTimezone: "US/Eastern", defaultCurrencyCode: "USD", addTimeZoneToTimeStamps: !0, validAmountPattern:"^[0-9]+([.,][0-9]{2})?$", invalidAmountCharacters: "", appRate: {enabled: !1, remindMeDays: 5, usesUntilFirstShow:10
+}
+},
+"enrollmentAppSettings", {
+staticAssetsPathPrefix: "", displayDebugMessages: !1, applicationType: "full",enrollFlow: {abandonFlowTargetState: {state: "unauthenticated.marketingLanding"}, finishFlowTargetState: {state: "unauthenticated.enrollSuccess"}, "basic-steps":[{state: "unauthenticated.enroll.confirmIdentity"}, {state: "unauthenticated.enroll.createProfile"}], "mfa-sitekey-steps":[{state: "unauthenticated.enroll.confirmIdentity"}, {state: "unauthenticated.enroll.createProfile"}, {state: "unauthenticated.enroll.setupSecurity"}], "mfa-nositekey-steps":[{state: "unauthenticated.enroll.confirmIdentity"}, {state: "unauthenticated.enroll.createProfile"}, {state: "unauthenticated.enroll.setupSecurity"}], "otp-steps":[{state: "unauthenticated.enroll.confirmIdentity"}, {state: "unauthenticated.enroll.createProfile"}]}, authenticationFlow: {abandonFlowTargetState: {state:"unauthenticated.marketingLanding"}, finishFlowTargetState: {state: "authenticated.dashboard"}, "basic-steps":[{state: "unauthenticated.basicLogin"}], "mfa-sitekey-steps":[{state: "unauthenticated.auth.login"}, {state: "unauthenticated.auth.question"}, {state: "unauthenticated.auth.passphrase"}], "mfa-nositekey-steps":[{state: "unauthenticated.auth.noSKLogin"}, {state: "unauthenticated.auth.question"}], "otp-steps":[{state: "unauthenticated.auth.otpLogin"}, {state: "unauthenticated.auth.otpCode"}]}, mfaNumberOfQuestions: 3, createCredentialsEnabled: !1, forgotUsernameEnabled: !1, forgotPasswordEnabled: !1, androidAppLink: "https://play.google.com/store/apps/details?id=org.secumd.m.prod&hl=en", iosAppLink: "https://itunes.apple.com/us/app/secu-mobile/id456057617?mt=8", rememberUsernameEnabled: !0, rememberDeviceEnabled: !0, defaultSupportedLanguages: {22: {displayName: "English (US)", locale: "en_US", messageKey: "language.us.en"}, 23:{displayName: "French", locale: "fr_US", messageKey: "language.us.fr"}, 24: {displayName: "Spanish", locale: "es_US", messageKey: "language.us.es"}}, rememberUsernameDefault: !1, rememberDeviceDefault: !1, preferenceDefault: "account", navigation: {transfer:{enabled: !0}, payments: {enabled: !0}, alerts: {enabled: !0}, preferences: {enabled:!0}, more: {enabled: !0}, help: {enabled: !0}, contactUs: {enabled: !0}, privacyPolicy: {enabled: !0},applicationInformation: {enabled: !0}, locations: {enabled: !0}, statements:{enabled: !1}}, otpCounterTime:60, allowDisableAccount: !0, allowDisablePayee: !1, transactionListHeaders: {transactionSearchResults: !0,transfersSchedule: !0, transfersHistory: !0,paymentsSchedule: !0, paymentsHistory: !0}, keepAliveUrl: "#", banner: {images:{mobileURL: "images/banner/banner_mobile.png", tabletURL: "images/banner/banner_tablet.png", desktopURL: "images/banner/banner_desktop.png"}, url: "http://www.monitisemobilefi.com/", enabled:!0}, ssoEnabled: !1, phoneNumberPattern: "^[0-9]+$", tabbedAccountPickerEnabled: !0, statementsAndRIB:{viewStatementsEnabled: !1, ribEnabled: !1}, passwordUpdateEnabled: !1, viewStatementsEnabled: !1
+}
+}
